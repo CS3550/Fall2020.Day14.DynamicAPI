@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset='utf-8'>
+  <title>API Update</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css"
+    integrity="sha512-EZLkOqwILORob+p0BXZc+Vm3RgJBOe1Iq/0fiI7r/wJgzOFZMlsqTa29UEl6v6U6gsV4uIpsNZoV32YZqrCRCQ=="
+    crossorigin="anonymous" /> -->
+  <!-- <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet"> -->
+</head>
+
+<body>
+  <!-- <div style="margin-top:100px;"></div> -->
+  <div>
+    <h1>Welcome to the API Tester</h1>
+  </div>
+  <div id="time">Current Time Goes Here</div>
+  <div><button onclick="getTime()">Update Time</button></div>
+
+  <input type=text id="echo" value="echo me">
+
+  <div id="echoOut">Echo result here</div>
+
+  <div><button class="button-primary" onclick="getEcho()">Get Echo</button></div>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/axios@0.20.0/dist/axios.min.js"></script>
+  <!-- <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+    crossorigin="anonymous"></script> -->
+  <script>
+
+    let root = "http://localhost:3000";
+
+    // function getTime() {
+    //   axios.get(root + "/api/time")
+    //     .then(result => {
+    //       $("#time").text(result.data);
+    //     })
+    //     .catch(err => {
+    //       console.log(err);
+    //     })
+    // }
+
+    // function getEcho() {
+    //   let toEcho = $("#echo").val();
+    //   axios.get(root + "/api/echo/" + toEcho)
+    //     .then(result => {
+    //       $("#echoOut").text(result.data);
+    //     })
+    //     .catch(err => {
+    //       console.log(err);
+    //     })
+    // }
+  </script>
+
+</body>
+
+</html>
